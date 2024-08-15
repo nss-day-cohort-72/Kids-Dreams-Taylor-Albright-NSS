@@ -41,6 +41,6 @@ Before you click the "Complete Assessment" button on the Learning Platform, add 
    > It has to be invoked inside the for loop because we want two arguments to be passed into the findCelebrityMatch function, an object and an array. To get the object we want to pass in, we need to iterate over the kids array with the for loop. The for loop "extracts" each kid from the kids array and passes it into the findCelebrityMatch. We wouldn't be able to iterate over each kid object in the kids array if we didn't put it inside the for loop.
 
 3. In the **CelebrityList** module, can you describe how the name of the sport that the celebrity plays can be displayed in the window alert text?
-   > Your answer here
+   > It's able to be displayed by accessing the dataset property of the click target when that element is clicked. Each <li> element in this module has a dataset attribute called named data-sport
 4. Can you describe, in detail, the algorithm that is in the `main` module?
    > Your answer here
