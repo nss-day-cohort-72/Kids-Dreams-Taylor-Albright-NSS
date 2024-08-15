@@ -38,7 +38,8 @@ Before you click the "Complete Assessment" button on the Learning Platform, add 
    > When a child name is clicked on, the eventListener code in the Kids.js module runs. What was clicked, the clickEvent.target, is stored in the clickTarget variable. The value of clickTarget.dataset.type is evaluated against the string "child" with an if statement. If the conditional evaluates to true, the for loop inside the conditional runs. The for loop iterates over the children array and each element in the array is evaluated against clickTarget.dataset.id. If true, then a match is found and the window.alert() message is displayed.
 
 2. In the **Pairings** module, why must the `findCelebrityMatch()` function be invoked inside the `for..of` loop that iterates the kids array?
-   > Your answer here
+   > It has to be invoked inside the for loop because we want two arguments to be passed into the findCelebrityMatch function, an object and an array. To get the object we want to pass in, we need to iterate over the kids array with the for loop. The for loop "extracts" each kid from the kids array and passes it into the findCelebrityMatch. We wouldn't be able to iterate over each kid object in the kids array if we didn't put it inside the for loop.
+
 3. In the **CelebrityList** module, can you describe how the name of the sport that the celebrity plays can be displayed in the window alert text?
    > Your answer here
 4. Can you describe, in detail, the algorithm that is in the `main` module?
