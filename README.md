@@ -35,7 +35,8 @@ Make sure your Developer Tools are open at all times while working on this proje
 Before you click the "Complete Assessment" button on the Learning Platform, add your answers below each question and make a commit.
 
 1. When a child is clicked on in the browser, which module contains the code that will execute on that event happening? Can you explain the algorithm of that logic?
-   > Your answer here
+   > When a child name is clicked on, the eventListener code in the Kids.js module runs. What was clicked, the clickEvent.target, is stored in the clickTarget variable. The value of clickTarget.dataset.type is evaluated against the string "child" with an if statement. If the conditional evaluates to true, the for loop inside the conditional runs. The for loop iterates over the children array and each element in the array is evaluated against clickTarget.dataset.id. If true, then a match is found and the window.alert() message is displayed.
+
 2. In the **Pairings** module, why must the `findCelebrityMatch()` function be invoked inside the `for..of` loop that iterates the kids array?
    > Your answer here
 3. In the **CelebrityList** module, can you describe how the name of the sport that the celebrity plays can be displayed in the window alert text?
